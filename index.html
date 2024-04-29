@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" data-bs-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -88,5 +88,24 @@
         </div>
       </main>
     </div>
+    <br />
+    <button class="btn btn-primary" onclick="cambiarTema(event);">
+      <i class="material-icons"
+        ><span id="txt_cambiar_tema">light_mode</span></i
+      >
+    </button>
+    <script>
+      function cambiarTema(event = false) {
+        if (event != false) event.preventDefault();
+        let htmlElement = document.documentElement;
+        let temaActual = htmlElement.getAttribute("data-bs-theme");
+        const ligth_icon = "light_mode";
+        const dark_icon = "dark_mode";
+        let nuevoTema = temaActual === "dark" ? "light" : "dark";
+        htmlElement.setAttribute("data-bs-theme", nuevoTema);
+        const icon = temaActual === "dark" ? ligth_icon : dark_icon;
+        document.getElementById("txt_cambiar_tema").textContent = icon;
+      }
+    </script>
   </body>
 </html>
