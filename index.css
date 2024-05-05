@@ -1,8 +1,4 @@
-label::after {
-  content: "";
-  color: red;
-  margin-left: 5px;
-}
+ 
 
 .form-floating input[required] + label::after {
   content: "*";
@@ -23,7 +19,7 @@ body {
 }
 .form-floating input:focus + label,
 .form-floating input:not(:placeholder-shown) + label {
-  /* top: -0.5rem!important; */
+   top: -0.9rem!important; 
   font-size: 15px !important;
   color: #007bff !important;
 }
@@ -33,4 +29,5 @@ a {
 .card {
   max-width: 500px !important;
 }
+
  
