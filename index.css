@@ -1,34 +1,36 @@
-  .form-floating {
-    position: relative;
-    margin-bottom: 1rem;
-    color: gray !important;
-  }
-  
-  .form-control {
-    border: none;
-    border-radius: 0;
-    border-bottom: 2px solid #ced4da;
-    padding: .375rem .75rem;
-    font-size: 20px !important;
-  }
-  
-  .form-floating input:focus {
-    border-color: 2px solid #007bff !important ;
-  }
-  
-  .form-floating label {
-    position: absolute;
-    pointer-events: none;
-    left: 0;
-    top: .5rem;
-    transition: top 0.2s, font-size 0.2s, color 0.2s;
-   
-  }
-  
-  .form-floating input:focus + label,
-  .form-floating input:not(:placeholder-shown) + label {
-    top: 0;
-    font-size: 17px;
-    color: #007bff!important;
-  }
+label::after {
+  content: "";
+  color: red;
+  margin-left: 5px;
+}
+
+.form-floating input[required] + label::after {
+  content: "*";
+  color: red;
+}
+.form-floating {
+  position: relative;
+  margin-bottom: 1rem;
+  color: gray !important;
+}
+.form-floating input:focus {
+  border-width: 2px !important;
+  border-color: #007bff !important;
+  box-shadow: none !important;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.form-floating input:focus + label,
+.form-floating input:not(:placeholder-shown) + label {
+  /* top: -0.5rem!important; */
+  font-size: 15px !important;
+  color: #007bff !important;
+}
+a {
+  text-decoration: none !important;
+}
+.card {
+  max-width: 500px !important;
+}
  
