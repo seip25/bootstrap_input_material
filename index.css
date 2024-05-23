@@ -1,41 +1,43 @@
-.form-floating input[required] + label::after {
-  content: "*";
-  color: red;
-}
-.form-floating {
-  position: relative;
-  margin-bottom: 1rem;
-  color: gray !important;
-}
-.form-floating input:focus {
-  border-width: 2px !important;
-  border-color: #007bff !important;
-  box-shadow: none !important;
-}
-body {
-  font-family: "Roboto", sans-serif;
-}
-.form-floating input:focus + label,
-.form-floating input:not(:placeholder-shown) + label {
-  top: -0.9rem !important;
-  font-size: 15px !important;
-  color: #007bff !important;
-}
-a {
-  text-decoration: none !important;
-}
-.card {
-  max-width: 500px !important;
-}
-.text-small {
-  font-size: 0.8rem !important;
-}
-.icon-text {
-  display: flex !important;
-  justify-content: flex-start !important;
-  justify-content: center !important;
-}
-.icon-text-nav {
-  display: flex;
-  justify-content: flex-start;
-}
+.bg-primary {
+        background-color: var(--bs-blue) !important;
+        color: white !important;
+      }
+      .btn-primary {
+        background-color: var(--bs-blue) !important;
+        color: white;
+      }
+      .btn-primary:hover {
+        background-color: var(--bs-blue) !important;
+        color: white;
+      }
+      .form-control:focus {
+        border: 2px solid var(--bs-blue);
+        box-shadow: none;
+      }
+      .form-control:focus + label {
+        color: var(--bs-blue) !important ;
+        top: -1rem !important;
+        box-shadow: transparent !important;
+      }
+      .form-check-input:checked {
+        background-color: var(--bs-blue);
+        border-color: var(--bs-blue);
+      }
+      .container-sm {
+        max-width: 500px !important;
+      }
+      .uppercase {
+        text-transform: uppercase;
+      }
+      .card-header {
+        height: 80px;
+      }
+      .icon-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .icon-text i {
+     
+        margin-top:  -0.8rem;
+      }
