@@ -13,6 +13,8 @@
       .form-control:focus {
         border: 2px solid var(--bs-blue);
         box-shadow: none;
+        padding-top: 0.35rem !important;
+         
       }
       .form-control:focus + label {
         color: var(--bs-blue) !important ;
