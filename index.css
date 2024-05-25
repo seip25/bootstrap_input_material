@@ -6,16 +6,14 @@
   --bs-color-light: #ffffff;
   --bs-color-muted: #4d5358;
   --bs-bg-pure: #f4f3ef;
+  --bs-switch: #4aac30;
+  --bs-background-dark: #171819;
 }
 
 [data-bs-theme="dark"] {
   color: var(--bs-color-light);
 }
 
-/* [data-bs-theme="light"] {
-  background-color: var(--bs-bg-pure)!important;
-  
-} */
 [data-bs-theme="dark"] .nav-link {
   color: var(--bs-color-light) !important;
 }
@@ -24,7 +22,7 @@
   color: var(--bs-color-muted) !important;
 }
 
-/* [data-bs-theme="dark"] .navbar {
+[data-bs-theme="dark"] .navbar {
   background-color: var(--bs-bg-dark) !important;
   color: var(--bs-color-muted) !important;
 }
@@ -32,7 +30,16 @@
 [data-bs-theme="light"] .navbar {
   background-color: var(--bs-bg-primary) !important;
   color: var(--bs-color-light) !important;
-} */
+}
+[data-bs-theme="light"] .navbar-brand {
+  color: var(--bs-color-light);
+}
+.navbar-toggler {
+  border: 1px solid var(--bs-color-light);
+}
+.menu-icon{
+  color: var(--bs-color-light) !important;
+}
 
 [data-bs-theme="light"] body {
   display: flex;
@@ -41,6 +48,12 @@
   background-color: var(--bs-bg-pure);
 }
 
+[data-bs-theme="dark"] body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bs-background-dark);
+}
 .bg-primary {
   background-color: var(--bs-primary) !important;
   color: white !important;
@@ -58,11 +71,11 @@
 .form-control:focus {
   border: 2px solid var(--bs-primary);
   box-shadow: none;
-  padding-top: 0.35rem !important;
+  /* padding-top: 0.35rem !important; */
 }
 .form-control:focus + label {
   color: var(--bs-primary) !important ;
-  top: -1rem !important;
+  /* top: -1rem !important; */
   box-shadow: transparent !important;
 }
 .form-check-input:checked {
@@ -143,8 +156,8 @@ a {
 }
 .card-header {
   border-bottom: none;
-} 
-.card-header-auth{
+}
+.card-header-auth {
   border-bottom: none;
   height: 80px;
 }
@@ -154,10 +167,19 @@ a {
 i {
   color: var(--bs-color-muted) !important;
 }
-.card{
-  border:none!important;
-  border-radius: 12px!important;
+.card {
+  border: none !important;
+  border-radius: 12px !important;
 }
-.text-gray{
+.text-gray {
   color: var(--bs-gray);
+}
+
+.form-check-input:checked {
+  background-color: var(--bs-switch);
+  border-color: var(--bs-switch);
+}
+.form-check-input {
+  height: 1.25rem;
+  width: 2.2rem !important;
 }
