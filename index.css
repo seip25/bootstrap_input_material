@@ -1,45 +1,163 @@
+:root {
+  --bs-bg-primary: #0d6efd;
+  --bs-bg-dark: #343a40;
+  --bs-bg-light: #f8f9fa;
+  --bs-color-dark: #212529;
+  --bs-color-light: #ffffff;
+  --bs-color-muted: #4d5358;
+  --bs-bg-pure: #f4f3ef;
+}
+
+[data-bs-theme="dark"] {
+  color: var(--bs-color-light);
+}
+
+/* [data-bs-theme="light"] {
+  background-color: var(--bs-bg-pure)!important;
+  
+} */
+[data-bs-theme="dark"] .nav-link {
+  color: var(--bs-color-light) !important;
+}
+
+[data-bs-theme="light"] .nav-link {
+  color: var(--bs-color-muted) !important;
+}
+
+/* [data-bs-theme="dark"] .navbar {
+  background-color: var(--bs-bg-dark) !important;
+  color: var(--bs-color-muted) !important;
+}
+
+[data-bs-theme="light"] .navbar {
+  background-color: var(--bs-bg-primary) !important;
+  color: var(--bs-color-light) !important;
+} */
+
+[data-bs-theme="light"] body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bs-bg-pure);
+}
+
 .bg-primary {
-        background-color: var(--bs-blue) !important;
-        color: white !important;
-      }
-      .btn-primary {
-        background-color: var(--bs-blue) !important;
-        color: white;
-      }
-      .btn-primary:hover {
-        background-color: var(--bs-blue) !important;
-        color: white;
-      }
-      .form-control:focus {
-        border: 2px solid var(--bs-blue);
-        box-shadow: none;
-        padding-top: 0.35rem !important;
-         
-      }
-      .form-control:focus + label {
-        color: var(--bs-blue) !important ;
-        top: -1rem !important;
-        box-shadow: transparent !important;
-      }
-      .form-check-input:checked {
-        background-color: var(--bs-blue);
-        border-color: var(--bs-blue);
-      }
-      .container-sm {
-        max-width: 500px !important;
-      }
-      .uppercase {
-        text-transform: uppercase;
-      }
-      .card-header {
-        height: 80px;
-      }
-      .icon-text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .icon-text i {
-     
-        margin-top:  -0.8rem;
-      }
+  background-color: var(--bs-primary) !important;
+  color: white !important;
+}
+.btn-primary {
+  background-color: var(--bs-primary) !important;
+  color: white;
+  border: 2px solid var(--bs-primary);
+}
+.btn-primary:hover {
+  background-color: var(--bs-primary) !important;
+  color: white;
+  border: 2px solid var(--bs-primary);
+}
+.form-control:focus {
+  border: 2px solid var(--bs-primary);
+  box-shadow: none;
+  padding-top: 0.35rem !important;
+}
+.form-control:focus + label {
+  color: var(--bs-primary) !important ;
+  top: -1rem !important;
+  box-shadow: transparent !important;
+}
+.form-check-input:checked {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+.form-floating {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.container-sm {
+  max-width: 500px !important;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-text i {
+  margin-top: -0.8rem;
+}
+a {
+  text-decoration: none;
+}
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.bg-gray {
+  background-color: var(--bs-gray) !important;
+  color: white !important;
+}
+.gray {
+  color: var(--bs-gray);
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--bs-indigo) !important;
+}
+.footer-menu-btn {
+  position: fixed;
+  margin-bottom: 1rem;
+  margin-left: -0.5rem;
+  display: flex;
+  bottom: 0;
+  justify-content: center;
+}
+.container-auth {
+  height: 450px;
+  transition: min-height 0.5s ease-in-out;
+}
+.container-card {
+  min-height: 200px;
+  transition: min-height 0.5s ease-in-out;
+}
+.btn-redondo {
+  border-radius: 70% !important;
+}
+.theme-button {
+  bottom: 0;
+  margin-bottom: 4rem !important;
+  position: fixed !important;
+}
+.w-70 {
+  width: 70%;
+}
+.card-footer {
+  border-top: none;
+  background-color: transparent;
+}
+.card-header {
+  border-bottom: none;
+} 
+.card-header-auth{
+  border-bottom: none;
+  height: 80px;
+}
+.text-gray-light {
+  color: gray;
+}
+i {
+  color: var(--bs-color-muted) !important;
+}
+.card{
+  border:none!important;
+  border-radius: 12px!important;
+}
+.text-gray{
+  color: var(--bs-gray);
+}
